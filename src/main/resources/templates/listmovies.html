@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Listing movies:</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>id</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="movie: ${movies}">
+                    <td th:text="${movie.title}" />
+                    <td th:text="${movie.id}" />
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
