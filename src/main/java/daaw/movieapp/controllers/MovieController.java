@@ -17,7 +17,7 @@ import daaw.movieapp.persistence.repo.MovieRepository;
 import org.springframework.ui.Model;
 
 @RestController
-@RequestMapping("/api/movies")
+@RequestMapping("/movies")
 public class MovieController {
 
     @GetMapping("/listmovies")
@@ -31,11 +31,6 @@ public class MovieController {
 
     @GetMapping
     public Iterable<Movie> findAll() {
-        return movieRepository.findAll();
-    }
-
-    @GetMapping("/test")
-    public Iterable<Movie> findAllTest() {
         return movieRepository.findAll();
     }
 
