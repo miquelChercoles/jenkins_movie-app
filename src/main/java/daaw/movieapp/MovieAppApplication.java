@@ -5,7 +5,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import daaw.movieapp.persistence.repo.ItemRepository;
+import daaw.movieapp.persistence.repo.MovieRepository;
 
 @SpringBootApplication
 @EnableMongoRepositories
@@ -13,7 +13,7 @@ public class MovieAppApplication implements CommandLineRunner{
 
 
 	@Autowired
-    ItemRepository groceryItemRepo;
+    MovieRepository movieRepo;
 	public static void main(String[] args) {
 		SpringApplication.run(MovieAppApplication.class, args);
 	}
