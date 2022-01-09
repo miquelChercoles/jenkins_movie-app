@@ -34,6 +34,11 @@ public class MovieController {
         return movieRepository.findAll();
     }
 
+    @GetMapping("/test")
+    public Iterable<Movie> findAllTest() {
+        return movieRepository.findAll();
+    }
+
     @GetMapping("/{id}")
     public Movie findOne(@PathVariable String id) {
         return movieRepository.findById(id)
