@@ -12,7 +12,7 @@ public class Movie {
         private String title;
         private String actor[];
         private String gender;
-        private String publication_date;
+        private String publication_date; 
 
         
         public Movie(String id, String title, String actor[], String gender, String publication_date) {

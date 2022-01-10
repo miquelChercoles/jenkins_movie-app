@@ -34,7 +34,7 @@ public class MovieController {
         return movieRepository.findAll();
     }
 
-    @GetMapping("/test")
+    @GetMapping("/test2")
     public Iterable<Movie> findAllTest() {
         return movieRepository.findAll();
     }
